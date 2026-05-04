@@ -34,7 +34,7 @@ function calcular(){
     }
     if(duna.checked){
         total = total + 40.00
-        itens = itens + "Duna <br>"
+        itens = itens + "Duna 2 <br>"
     }
     if(sociedade.checked){
         total = total + 30.00
@@ -62,24 +62,23 @@ function calcular(){
 
     //se o valor for maior ou igual a 40, aplicamos o desconto de 10%
     if(subtotal >= 40){
-        desconto = subtotal * 0.30 // 10%
+        desconto = subtotal * 0.15 // 10%
     }
     
-    //7. entrega
+    /*//7. entrega
     let entrega = 5
     //se passar de 50 -> entrega gratis
    if(subtotal - desconto >= 55){
     entrega = 0
     
-    }
+    }*/
 
     // 8. total final
-    let totalFinal = subtotal - desconto + entrega
+    let totalFinal = subtotal - desconto 
 
     //9. mostrar o resultado
     resultado.innerHTML = "<strong>Itens:</strong><br>" + itens 
-    + "<br> Subtotal: R$ " + subtotal.toFixed(2)+ "<br> Entrega: R$ " 
-    + entrega.toFixed(2) + "<br> Desconto: R$ " + desconto.toFixed(2) + "<br><strong> Total: R$ " 
+    + "<br> Subtotal: R$ " + subtotal.toFixed(2) + "<br> Desconto: R$ " + desconto.toFixed(2) + "<br><strong> Total: R$ " 
     + totalFinal.toFixed(2) + "</strong>"
 
     
