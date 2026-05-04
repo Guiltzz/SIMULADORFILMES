@@ -8,7 +8,7 @@ function calcular(){
     let seven = document.getElementById("Seven")
     let duna = document.getElementById("Duna")
     let sociedade = document.getElementById("Sociedade")
-    let interestelar = document.getElementById("Interestelar")
+    let interestelar = document.getElementById("Interstelar")
     //2 variaveis iniciais
     //total começa com 0
     let total = 0
@@ -43,7 +43,7 @@ function calcular(){
     }
     if(interestelar.checked){
         total = total + 35.00
-        itens = itens + "Interestelar<br>"
+        itens = itens + "Interstelar<br>"
     }
 
     //4. pegar div do resultado
